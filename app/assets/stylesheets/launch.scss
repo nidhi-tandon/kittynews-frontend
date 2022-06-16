@@ -1,0 +1,40 @@
+.launch {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  flex-direction: column;
+
+  .title {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .text {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .header {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 8px 0 24px 0;
+  }
+
+  .data {
+    justify-content: space-between;
+    display: flex;
+  }
+
+  .bottom{
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    span{
+      color: rgba(0, 0, 0, 0.5);
+      margin-left: 8px;
+    }
+  }
+}

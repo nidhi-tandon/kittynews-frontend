@@ -2,21 +2,98 @@
   border-bottom: 1px solid #e8e8e8;
   padding-bottom: 20px;
 
+  .image-container {
+    margin-right: 12px;
+    position: relative;
+    margin-bottom: 20px;
+
+    .avatar {
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .tip-image {
+      position: absolute;
+      bottom: 0;
+      left: 33%;
+    }
+  }
+
+  .hero-section {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .button-section {
+    display: flex;
+  }
+
+  .voted {
+    color: rgb(243, 68, 29);
+    background-color: white;
+    border: 1px solid rgb(243, 68, 29);
+
+    &:hover {
+      background-color: white;
+    }
+  }
+
+  .not-voted {
+    background-color: rgb(243, 68, 29);
+    color: white;
+    border: 1px solid rgb(243, 68, 29);
+
+    &:hover {
+      background-color: rgb(243, 68, 29);
+    }
+  }
+
+  .upvote-button {
+    position: relative;
+
+    button {
+      border-radius: 4px;
+      margin-bottom: 10px;
+      padding: 20px 32px;
+      margin-left: 12px;
+    }
+
+    img {
+      position: absolute;
+      bottom: 50%;
+      left: 16%;
+    }
+  }
+
   h2 {
-    margin: 0 0 20px 0;
+    margin: 20px 0 20px 0;
     padding: 0;
+    color: black;
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
   }
 
   .url {
     margin-bottom: 10px;
+    padding: 20px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
 
     a {
       color: #999999;
+      text-decoration: none;
     }
   }
 
   .tagline {
     margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+    font-size: 18px;
   }
 
   footer {
@@ -44,6 +121,37 @@
 
     &:hover {
       background: #e8e8e8;
+    }
+  }
+
+  .hero-image {
+    height: 80px
+  }
+
+
+  .comments-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+
+    .image-section {
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      span {
+        margin-left: 12px;
+      }
+    }
+
+    button {
+      padding: 12px;
     }
   }
 }
